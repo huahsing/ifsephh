@@ -23,7 +23,13 @@
             }
             function update(id) {
                 itemPricingManagement.id.value = id;
-                itemPricingManagement.setPrice.value = parseInt($("#price" + id).val());
+                
+                //********** CODEFIX
+                // itemPricingManagement.setPrice.value = parseInt($("#price" + id).val());
+                var roundedPriceToOneDecimal = Math.round( parseFloat($("#price" + id).val()) * 10 ) / 10;
+                itemPricingManagement.setPrice.value = roundedPriceToOneDecimal;
+                //**********
+                
                 document.itemPricingManagement.action = "../CountryItemPricingManagement_UpdateCountryItemPricingServlet";
                 document.itemPricingManagement.submit();
             }
