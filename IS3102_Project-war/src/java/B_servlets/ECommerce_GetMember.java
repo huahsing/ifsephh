@@ -37,6 +37,7 @@ public class ECommerce_GetMember extends HttpServlet {
 
             Member member = retrieveMemberRESTful( email );
             session.setAttribute("member", member);
+            session.setAttribute("memberName", member.getName());
 
             if (member == null) {
                 response.sendRedirect("/IS3102_Project-war/B/SG/memberLogin.jsp?errMsg=" + "member is null");
