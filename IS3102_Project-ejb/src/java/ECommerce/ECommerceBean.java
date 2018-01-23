@@ -129,7 +129,7 @@ public class ECommerceBean implements ECommerceBeanLocal {
                 msg.setSubject("Island Furniture Monthly Newsletter");
                 String messageText = "Greetings from Island Furniture... \n\n"
                         + "You have been successfully added to our monthly newsletter! :\n\n"
-                        + "Click here to unsubscribe: http://localhost:8080/IS3102_Project-war/ECommerce_UnsubscribeServlet?email=" + email;
+                        + "Click here to unsubscribe: http://localhost:9090/IS3102_Project-war/ECommerce_UnsubscribeServlet?email=" + email;
                 msg.setText(messageText);
                 msg.setHeader("X-Mailer", mailer);
                 Date timeStamp = new Date();
@@ -184,7 +184,7 @@ public class ECommerceBean implements ECommerceBeanLocal {
                             String messageText = "Greetings from Island Furniture... \n\n"
                                     + "Here is your monthly newsletter :\n\n"
                                     + "Promotion for this week is as follow"
-                                    + "Click here to unsubscribe: http://localhost:8080/IS3102_Project-war/ECommerce_UnsubscribeServlet?email=" + subscriber.getEmail();
+                                    + "Click here to unsubscribe: http://localhost:9090/IS3102_Project-war/ECommerce_UnsubscribeServlet?email=" + subscriber.getEmail();
                             msg.setText(messageText);
                             msg.setHeader("X-Mailer", mailer);
                             Date timeStamp = new Date();

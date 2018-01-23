@@ -38,7 +38,7 @@ public class ECommerce_AllRetailProductsServlet extends HttpServlet {
     public List<RetailProduct> getRetailProductListRESTful(Long countryID) {
         Client client = ClientBuilder.newClient();
         WebTarget target = client
-                .target("http://localhost:8080/IS3102_WebService-Student/webresources/entity.retailproductentity")
+                .target("http://localhost:9090/IS3102_WebService-Student/webresources/entity.retailproductentity")
                 .path("getRetailProductList")
                 .queryParam("countryID", countryID);
         Invocation.Builder invocationBuilder = target.request(MediaType.APPLICATION_JSON);

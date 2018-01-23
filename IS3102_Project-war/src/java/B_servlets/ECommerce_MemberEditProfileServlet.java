@@ -66,7 +66,7 @@ public class ECommerce_MemberEditProfileServlet extends HttpServlet {
     public void updateMemberRESTful(String email, String name, String phone, String address, Integer securityQn, String securityAns, Integer age, Integer income, String password) {
         Client client = ClientBuilder.newClient();
         WebTarget target = client
-                .target("http://localhost:8080/IS3102_WebService-Student/webresources/entity.memberentity")
+                .target("http://localhost:9090/IS3102_WebService-Student/webresources/entity.memberentity")
                 .path("setMember")
                 .queryParam("email", email)
                 .queryParam("name", name)

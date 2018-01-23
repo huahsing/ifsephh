@@ -52,7 +52,7 @@ public class ECommerce_GetMember extends HttpServlet {
     public Member retrieveMemberRESTful(String email) {
         Client client = ClientBuilder.newClient();
         WebTarget target = client
-                .target("http://localhost:8080/IS3102_WebService-Student/webresources/entity.memberentity")
+                .target("http://localhost:9090/IS3102_WebService-Student/webresources/entity.memberentity")
                 .path("getMember")
                 .queryParam("email", email);
         Invocation.Builder invocationBuilder = target.request(MediaType.APPLICATION_JSON);

@@ -66,7 +66,7 @@ public class SystemSecurityBean implements SystemSecurityBeanLocal, SystemSecuri
                         + "Thank you for being our loyal customer and as an appreciation for your support, "
                         + "we have added loyalty points to your account : " + loyaltyPoints + "\n\n"
                         + "The points can be used for discount on your next purchase in any of our store!" + "\n\n"
-                        + "Link to our site: http://localhost:8080/IS3102_Project-war/B/index.jsp";
+                        + "Link to our site: http://localhost:9090/IS3102_Project-war/B/index.jsp";
                 msg.setText(messageText);
                 msg.setHeader("X-Mailer", mailer);
                 Date timeStamp = new Date();
@@ -132,7 +132,7 @@ public class SystemSecurityBean implements SystemSecurityBeanLocal, SystemSecuri
                         + "Here is your activation code to be keyed in in order to activate your staff account :\n\n"
                         + "Email: " + email + "\n\n"
                         + "Activation Code: " + activationCode + "\n\n"
-                        + "Link to activate your staff account: http://localhost:8080/IS3102_Project-war/A1/staffActivateAccount.jsp";
+                        + "Link to activate your staff account: http://localhost:9090/IS3102_Project-war/A1/staffActivateAccount.jsp";
                 msg.setText(messageText);
                 msg.setHeader("X-Mailer", mailer);
                 Date timeStamp = new Date();
@@ -184,7 +184,7 @@ public class SystemSecurityBean implements SystemSecurityBeanLocal, SystemSecuri
                 msg.setSubject("Island Furniture Member Account Activation");
                 String messageText = "Greetings from Island Furniture... \n\n"
                         + "Here is your activation code to be keyed in in order to activate your member account :\n\n"
-                        + "Link to activate your member account: http://localhost:8080/IS3102_Project-war/ECommerce_ActivateMemberServlet?email=" + email + "&activateCode=" + activationCode;
+                        + "Link to activate your member account: http://localhost:9090/IS3102_Project-war/ECommerce_ActivateMemberServlet?email=" + email + "&activateCode=" + activationCode;
                 msg.setText(messageText);
                 msg.setHeader("X-Mailer", mailer);
                 Date timeStamp = new Date();
@@ -237,7 +237,7 @@ public class SystemSecurityBean implements SystemSecurityBeanLocal, SystemSecuri
                         + "Here is your activation code to be keyed in in order to reset your staff account password :\n\n"
                         + "Email: " + email + "\n\n"
                         + "Activation Code: " + passwordReset + "\n\n"
-                        + "Link to activate your staff account: http://localhost:8080/IS3102_Project-war/A1/staffResetPasswordCode.jsp";
+                        + "Link to activate your staff account: http://localhost:9090/IS3102_Project-war/A1/staffResetPasswordCode.jsp";
                 msg.setText(messageText);
                 msg.setHeader("X-Mailer", mailer);
                 Date timeStamp = new Date();
@@ -289,7 +289,7 @@ public class SystemSecurityBean implements SystemSecurityBeanLocal, SystemSecuri
                         + "Here is your activation code to be keyed in in order to reset your member account password :\n\n"
                         + "Email: " + email + "\n\n"
                         + "Activation Code: " + passwordReset + "\n\n"
-                        + "Link to reset your password: http://localhost:8080/IS3102_Project-war/B/memberResetPassword.jsp?email=" + email;
+                        + "Link to reset your password: http://localhost:9090/IS3102_Project-war/B/memberResetPassword.jsp?email=" + email;
                 msg.setText(messageText);
                 msg.setHeader("X-Mailer", mailer);
                 Date timeStamp = new Date();

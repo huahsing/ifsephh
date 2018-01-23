@@ -77,7 +77,7 @@
     <target name="wsimport-client-SalesRecordingWebService" depends="wsimport-init">
         <mkdir dir="${build.generated.dir}/jax-wsCache/SalesRecordingWebService"/>
         <property name="wsdl-SalesRecordingWebService" location="${meta.inf}/xml-resources/web-service-references/SalesRecordingWebService/wsdl/localhost_8080/SalesRecordingWebService/SalesRecordingWebService.wsdl"/>
-        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/SalesRecordingWebService" destdir="${build.generated.dir}/jax-wsCache/SalesRecordingWebService" wsdl="${wsdl-SalesRecordingWebService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/SalesRecordingWebService/SalesRecordingWebService?WSDL" xnocompile="true" xendorsed="true" package="StoreTransaction">
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/SalesRecordingWebService" destdir="${build.generated.dir}/jax-wsCache/SalesRecordingWebService" wsdl="${wsdl-SalesRecordingWebService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:9090/SalesRecordingWebService/SalesRecordingWebService?WSDL" xnocompile="true" xendorsed="true" package="StoreTransaction">
             <depends file="${wsdl-SalesRecordingWebService}"/>
             <produces dir="${build.generated.dir}/jax-wsCache/SalesRecordingWebService"/>
         </wsimport>

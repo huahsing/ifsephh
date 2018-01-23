@@ -28,7 +28,7 @@
   </services>
   <clients>
     <client name="SalesRecordingWebService">
-      <wsdl-url>http://localhost:8080/SalesRecordingWebService/SalesRecordingWebService?WSDL</wsdl-url>
+      <wsdl-url>http://localhost:9090/SalesRecordingWebService/SalesRecordingWebService?WSDL</wsdl-url>
       <local-wsdl-file>localhost_8080/SalesRecordingWebService/SalesRecordingWebService.wsdl</local-wsdl-file>
       <package-name forceReplace="true">StoreTransaction</package-name>
       <catalog-file>catalog.xml</catalog-file>
@@ -47,7 +47,7 @@
         </wsimport-option>
         <wsimport-option>
           <wsimport-option-name>wsdlLocation</wsimport-option-name>
-          <wsimport-option-value>http://localhost:8080/SalesRecordingWebService/SalesRecordingWebService?WSDL</wsimport-option-value>
+          <wsimport-option-value>http://localhost:9090/SalesRecordingWebService/SalesRecordingWebService?WSDL</wsimport-option-value>
         </wsimport-option>
         <wsimport-option>
           <wsimport-option-name>xnocompile</wsimport-option-name>
